@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+        }
+        #logo {
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #contents {
+            float: right;
+            margin-top: 45px;
+            padding-top: 5px;
+            font-size: 35px;
+            margin-right: 35px;
+        }
+        #contents a {
+            border: 3px solid white;
+            border-radius: 45px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        #contents a:hover {
+            color: gold;
+            transition: 0.3s;
+        }
+        .search-container {
+            padding: 80px;
+            align-items: center;
+            padding-top: 15px;
+            height: 90px;
+            margin-left: 55px;
+            padding-bottom: 25px;
+        }
+        .search-container input {
+            padding: 12px 20px;
+            margin-left: 400px;
+            margin-top: 30px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 25px;
+            cursor: text;
+        }
+        .search-container button {
+            padding: 12px 15px;
+            margin-left: 10px;
+            background-color: #d20f0f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #e0672a;
+        }
+        .contact-container {
+            margin: 80px auto;
+            padding: 20px;
+            height: auto;
+            border: 1px solid black;
+            width: 750px;
+            color: silver;
+            text-align: center;
+            border-radius: 25px;
+            background: linear-gradient(rgba(43, 7, 3, 0.7), rgba(30, 4, 14, 0.7));
+        }
+        
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .product button {
+            background-color: #d20f0f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #e0672a;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            right: 0;
+            margin-top: 255px;
+            background: rgba(4, 9, 30, 0.7);
+            color: silver;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 97%;
+        }
+        footer a {
+            color: silver;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        footer a:hover {
+            color: #d20f0f;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons i {
+            font-size: 30px;
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #d20f0f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="HOME.html"><img src="./LOGO.png" width="130px" height="130px" alt="Logo"></a>
+        </div>
+        <div id="contents">
+            <a href="ABOUTUS.html" target="_blank">ABOUT US</a>
+            <a href="CONTACTUS.html" target="_blank">CONTACT US</a>
+            <a href="LOGIN.html" target="_blank">LOGIN</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." aria-label="Search">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="product-list">
+        
+        <!-- Koenigsegg Jesko -->
+        <div class="product">
+            <img src="Koenigsegg Jesko.jpg" alt="Koenigsegg Jesko">
+            <h2>Koenigsegg Jesko</h2>
+            <p>The Jesko is a hypercar designed to push the limits of speed and performance, featuring a 5.0-liter twin-turbo V8 engine.</p>
+            <a href="Koenigsegg_Jesko.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Koenigsegg Agera RS -->
+        <div class="product">
+            <img src="Koenigsegg Agera RS.jpg" alt="Koenigsegg Agera RS">
+            <h2>Koenigsegg Agera RS</h2>
+            <p>The Agera RS is a record-breaking hypercar known for its immense speed and groundbreaking technology.</p>
+            <a href="Koenigsegg_Agera_RS.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Koenigsegg Regera -->
+        <div class="product">
+            <img src="Koenigsegg Regera.jpg" alt="Koenigsegg Regera">
+            <h2>Koenigsegg Regera</h2>
+            <p>The Regera is a hybrid hypercar that blends cutting-edge technology with unparalleled performance, featuring a twin-turbo V8 and electric motors.</p>
+            <a href="Koenigsegg_Regera.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Koenigsegg One:1 -->
+        <div class="product">
+            <img src="Koenigsegg One 1.jpg" alt="Koenigsegg One:1">
+            <h2>Koenigsegg One:1</h2>
+            <p>The One:1 is a lightweight hypercar built for extreme performance, with a 1,341 hp engine and an incredible power-to-weight ratio.</p>
+            <a href="Koenigsegg_One1.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Koenigsegg Gemera -->
+        <div class="product">
+            <img src="Koenigsegg Gemera.jpg" alt="Koenigsegg Gemera">
+            <h2>Koenigsegg Gemera</h2>
+            <p>The Gemera is a revolutionary hypercar that seats four people while offering stunning performance from its hybrid powertrain.</p>
+            <a href="Koenigsegg_Gemera.html" target="_blank"><button>Learn More</button></a>
+        </div>
+       
+    </div>
+
+    <footer>
+        <div>
+            <a href="ABOUTUS.html" target="_blank">About Us</a>
+            <a href="CONTACTUS.html" target="_blank">Contact Us</a>
+            <a href="LOGIN.html" target="_blank">Login</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+        </div>
+        <p>&copy; 2024 MIDNIGHT-RIDES. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+        }
+        #logo {
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #contents {
+            float: right;
+            margin-top: 45px;
+            padding-top: 5px;
+            font-size: 35px;
+            margin-right: 35px;
+        }
+        #contents a {
+            border: 3px solid white;
+            border-radius: 45px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        #contents a:hover {
+            color: gold;
+            transition: 0.3s;
+        }
+        .search-container {
+            padding: 80px;
+            align-items: center;
+            padding-top: 15px;
+            height: 90px;
+            margin-left: 55px;
+            padding-bottom: 25px;
+        }
+        .search-container input {
+            padding: 12px 20px;
+            margin-left: 400px;
+            margin-top: 30px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 25px;
+            cursor: text;
+        }
+        .search-container button {
+            padding: 12px 15px;
+            margin-left: 10px;
+            background-color: #d20f0f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #e0672a;
+        }
+        .contact-container {
+            margin: 80px auto;
+            padding: 20px;
+            height: auto;
+            border: 1px solid black;
+            width: 750px;
+            color: silver;
+            text-align: center;
+            border-radius: 25px;
+            background: linear-gradient(rgba(43, 7, 3, 0.7), rgba(30, 4, 14, 0.7));
+        }
+        
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .product button {
+            background-color: #d20f0f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #e0672a;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            right: 0;
+            margin-top: 225px;
+            background: rgba(4, 9, 30, 0.7);
+            color: silver;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 97%;
+        }
+        footer a {
+            color: silver;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        footer a:hover {
+            color: #d20f0f;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons i {
+            font-size: 30px;
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #d20f0f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="HOME.html"><img src="./LOGO.png" width="130px" height="130px" alt="Logo"></a>
+        </div>
+        <div id="contents">
+            <a href="ABOUTUS.html" target="_blank">ABOUT US</a>
+            <a href="CONTACTUS.html" target="_blank">CONTACT US</a>
+            <a href="LOGIN.html" target="_blank">LOGIN</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." aria-label="Search">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="product-list">
+        
+        <!-- BMW 1 Series -->
+        <div class="product">
+            <img src="BMW 1 Series.jpg" alt="BMW 1 Series">
+            <h2>BMW 1 Series</h2>
+            <p>Sporty, compact, and full of character. The BMW 1 Series is designed for the ultimate urban driving experience.</p>
+            <a href="BMW_1_Series.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW 3 Series -->
+        <div class="product">
+            <img src="BMW 3 Series.jpg" alt="BMW 3 Series">
+            <h2>BMW 3 Series</h2>
+            <p>The BMW 3 Series offers a perfect blend of luxury, performance, and technology for the modern driver.</p>
+            <a href="BMW_3_Series.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW 5 Series -->
+        <div class="product">
+            <img src="BMW 5 Series.jpg" alt="BMW 5 Series">
+            <h2>BMW 5 Series</h2>
+            <p>Elegance, comfort, and power— the BMW 5 Series delivers an exceptional driving experience in every way.</p>
+            <a href="BMW_5_Series.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW 7 Series -->
+        <div class="product">
+            <img src="BMW 7 Series.jpg" alt="BMW 7 Series">
+            <h2>BMW 7 Series</h2>
+            <p>Experience unrivaled luxury and cutting-edge technology with the BMW 7 Series luxury sedan.</p>
+            <a href="BMW_7_Series.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW X1 -->
+        <div class="product">
+            <img src="BMW X1.jpg" alt="BMW X1">
+            <h2>BMW X1</h2>
+            <p>The compact BMW X1 combines practicality with dynamic driving performance, offering versatility and fun.</p>
+            <a href="BMW_X1.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW X3 -->
+        <div class="product">
+            <img src="BMW X3.jpg" alt="BMW X3">
+            <h2>BMW X3</h2>
+            <p>The BMW X3 is the perfect combination of athleticism and luxury. It brings together the best of both worlds.</p>
+            <a href="BMW_X3.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW X5 -->
+        <div class="product">
+            <img src="BMW X5.jpg" alt="BMW X5">
+            <h2>BMW X5</h2>
+            <p>With its muscular design and powerful engine options, the BMW X5 sets the benchmark for luxury SUVs.</p>
+            <a href="BMW_X5.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW X7 -->
+        <div class="product">
+            <img src="BMW X7.jpg" alt="BMW X7">
+            <h2>BMW X7</h2>
+            <p>The BMW X7 is the ultimate luxury SUV with supreme comfort, unmatched performance, and advanced technology.</p>
+            <a href="BMW_X7.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW Z4 -->
+        <div class="product">
+            <img src="BMW Z4.jpg" alt="BMW Z4">
+            <h2>BMW Z4</h2>
+            <p>Pure driving pleasure is embodied in the BMW Z4 roadster, a true sports car built for open-road thrill seekers.</p>
+            <a href="BMW_Z4.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- BMW M4 -->
+        <div class="product">
+            <img src="BMW M4.jpg" alt="BMW M4">
+            <h2>BMW M4</h2>
+            <p>For those who demand maximum performance, the BMW M4 delivers on all fronts with exceptional power and agility.</p>
+            <a href="BMW_M4.html" target="_blank"><button>Learn More</button></a>
+        </div>
+       
+    </div>
+
+    <footer>
+        <div>
+            <a href="ABOUTUS.html" target="_blank">About Us</a>
+            <a href="CONTACTUS.html" target="_blank">Contact Us</a>
+            <a href="LOGIN.html" target="_blank">Login</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+        </div>
+        <p>&copy; 2024 MIDNIGHT-RIDES. All rights reserved.</p>
+    </footer>
+</body>
+</html>

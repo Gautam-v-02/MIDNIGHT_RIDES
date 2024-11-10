@@ -1,0 +1,92 @@
+body{
+    background-image:url(./lambo_back.png);
+    
+    /* background-size: cover; */
+}
+/* linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), -> Use this line in backgroud image to dim the image */
+
+header{
+    height: 150px;
+    width: 100%;
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ;
+    position: fixed;
+}
+#logo{
+    float: left;
+}
+#contents{
+    /* text-align: center; */
+    float: right;
+    margin-top: 45px;
+    padding-top: 5px;
+    font-size: 35px;
+    margin-right: 35px;
+}
+#contents a{
+    border: 3px solid white;
+    border-radius: 45px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#contents a:hover{
+    color: gold;
+    transition: 0.3s;
+    
+}
+.search-container{
+    padding: 80px;
+    align-items: center;
+    padding-top: 15px;
+    height: 90px;
+    margin-left: 55px;
+    padding-bottom: 25px;
+}
+.search-container input{
+    padding: 12px 20px;
+    margin-left: 400px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: text;
+}
+.search-container button {
+    padding: 12px 15px;
+    margin-left: 10px;
+    background-color: #d20f0f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.search-container button:hover{
+    background-color: #e0672a;
+}
+#descar{
+    margin-top: 200px;
+    margin-left: 35px;
+    float: left;
+    text-shadow: 4px 4px 4px black;
+    color: gold;
+    font-size: 35px;
+}
+#midride{
+    margin-top: 360px;
+    margin-left: 35px;
+    float: left;
+    font-size: 35px;
+}
+p a{
+    text-decoration: none;
+    text-shadow: 4px 4px 4px black;
+    color: gold;
+}
+p a:hover{
+    color: white;
+    transition: 0.5s;
+
+}

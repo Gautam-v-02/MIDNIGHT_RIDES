@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FIRSTPAGE</title>
+    
+    <style>
+   
+        header {
+            top: 0;
+            left: 0;
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+        }
+        #logo {
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #contents {
+            float: right;
+            margin-top: 45px;
+            padding-top: 5px;
+            font-size: 35px;
+            margin-right: 35px;
+        }
+        #contents a {
+            border: 3px solid white;
+            border-radius: 45px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        #contents a:hover {
+            color: gold;
+            transition: 0.3s;
+        }
+        .search-container {
+            padding: 80px;
+            align-items: center;
+            padding-top: 15px;
+            height: 90px;
+            margin-left: 55px;
+            padding-bottom: 25px;
+        }
+        .search-container input {
+            padding: 12px 20px;
+            margin-left: 400px;
+            margin-top: 30px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 25px;
+            cursor: text;
+        }
+        .search-container button {
+            padding: 12px 15px;
+            margin-left: 10px;
+            background-color: #d20f0f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #e0672a;
+        }
+        .contact-container {
+            margin: 80px auto;
+            padding: 20px;
+            height: auto;
+            border: 1px solid black;
+            width: 750px;
+            color: silver;
+            text-align: center;
+            border-radius: 25px;
+            background: linear-gradient(rgba(43, 7, 3, 0.7), rgba(30, 4, 14, 0.7));
+        }
+        #quote{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+            margin-top: 100px;
+            text-align: center;
+        }
+        #quote span{
+            color:#D4AF37;
+            font-size: 25px;
+            font-style: italic;
+            text-shadow: 1px 1px 1px black;
+        } 
+        #heading{
+            font-family: sans-serif Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            padding-left: 40px;
+            color: rgba(0, 0, 0, 0.837);
+            /* border: 1px solid blue; */
+        } 
+            #boxes{
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            margin: 1px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        
+
+            
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 5px 10px;
+            transition: 1s;
+        
+                
+        }
+        .box img{
+            display: border;
+            width: 100%;
+            height: 400px;
+            border-radius: 5px;
+            border: 2px solid black;
+            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.525);
+            
+        }
+        .box:hover{
+            transform: scale(1.2);
+            z-index: 2;
+        }
+        .Brand{
+            color: black;
+            font-family:Pacifico;
+            text-align: center;
+            background-color:rgb(166, 148, 45) ;
+            margin-left:30%;
+            margin-right: 30%;
+            transform: translateY(-50%);
+            border-radius: 11pt;
+        }
+        #line_hr{
+            margin-top: 150px;
+        }
+
+        footer {
+                background: rgba(4, 9, 30, 0.7);
+                color: silver;
+                margin-top: 160px;
+                left: 0;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+        }
+        footer a {
+                color: silver;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 20px;
+        }
+        footer a:hover {
+                color: #d20f0f;
+        }
+        .social-icons {
+                margin-top: 10px;
+        }
+        .social-icons i {
+                font-size: 30px;
+                margin: 0 10px;
+                color: white;
+                transition: color 0.3s;
+        }
+        .social-icons a:hover {
+                color: #d20f0f;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div id="logo">
+            <a href="HOME.html"><img src="./LOGO.png" width="130px" height="130px" alt="Logo"></a>
+        </div>
+        <div id="contents">
+            <a href="ABOUTUS.html" target="_blank">ABOUT US</a>
+            <a href="CONTACTUS.html" target="_blank">CONTACT US</a>
+            <a href="LOGIN.html" target="_blank">LOGIN</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." aria-label="Search">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    
+      <div id="quote"><span>Cars are one of the miost important objects in our lives.</span>&nbsp;Wouldn't you agree?</div>
+    <hr>
+    <div id="heading"><p><i>Top Categories</i></p></div>
+     
+    <div id="boxes">
+      
+      <div class="box">
+        <a href="BENTLEY.html" target="_blank"><img src="./BENTLEY_LOGO.jpg" alt="Bentley"></a>
+       <div class="Brand">Bentley</div> 
+      </div>
+      <div class="box">
+        <a href="BMW.html" target="_blank"><img src="./BMW_LOGO.png" alt="BMW"></a>
+       <div class="Brand">BMW</div> 
+      </div>
+      <div class="box">
+        <a href="FERRARI.html" target="_blank"><img src="./FERRARI_LOGO.jpg" alt="Ferrai"></a>
+       <div class="Brand">Ferrari</div> 
+      </div>
+      <div class="box">
+        <a href="LAMBORGHINI.html" target="_blank"><img src="./LAMBORGHINI_LOGO.png" alt="Lamborghini"></a>
+       <div class="Brand">Lamborghini</div> 
+      </div>
+      <div class="box">
+        <a href="KOENIGSEGG.html" target="_blank"><img src="./KOENIGSEGG_LOGO.jpg" alt="KOENIGSEGG"></a>
+       <div class="Brand">KOENIGSEGG</div>
+      </div>
+      <div class="box">
+        <a href="MERCEDES.html" target="_blank"><img src="./MERCEDES_LOGO.jpg" alt="Mercedes"></a>
+       <div class="Brand">Mercedes</div>
+      </div>
+
+    </div> 
+   
+    <footer>
+        <div>
+            <a href="ABOUTUS.html" target="_blank">About Us</a>
+            <a href="CONTACTUS.html" target="_blank">Contact Us</a>
+            <a href="LOGIN.html" target="_blank">Login</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+        </div>
+        <p>&copy; 2024 MIDNIGHT-RIDES. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

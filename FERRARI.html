@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+        }
+        #logo {
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #contents {
+            float: right;
+            margin-top: 45px;
+            padding-top: 5px;
+            font-size: 35px;
+            margin-right: 35px;
+        }
+        #contents a {
+            border: 3px solid white;
+            border-radius: 45px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        #contents a:hover {
+            color: gold;
+            transition: 0.3s;
+        }
+        .search-container {
+            padding: 80px;
+            align-items: center;
+            padding-top: 15px;
+            height: 90px;
+            margin-left: 55px;
+            padding-bottom: 25px;
+        }
+        .search-container input {
+            padding: 12px 20px;
+            margin-left: 400px;
+            margin-top: 30px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 25px;
+            cursor: text;
+        }
+        .search-container button {
+            padding: 12px 15px;
+            margin-left: 10px;
+            background-color: #d20f0f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #e0672a;
+        }
+        .contact-container {
+            margin: 80px auto;
+            padding: 20px;
+            height: auto;
+            border: 1px solid black;
+            width: 750px;
+            color: silver;
+            text-align: center;
+            border-radius: 25px;
+            background: linear-gradient(rgba(43, 7, 3, 0.7), rgba(30, 4, 14, 0.7));
+        }
+        
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .product button {
+            background-color: #d20f0f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #e0672a;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            right: 0;
+            margin-top: 225px;
+            background: rgba(4, 9, 30, 0.7);
+            color: silver;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 97%;
+        }
+        footer a {
+            color: silver;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        footer a:hover {
+            color: #d20f0f;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons i {
+            font-size: 30px;
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #d20f0f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="HOME.html"><img src="./LOGO.png" width="130px" height="130px" alt="Logo"></a>
+        </div>
+        <div id="contents">
+            <a href="ABOUTUS.html" target="_blank">ABOUT US</a>
+            <a href="CONTACTUS.html" target="_blank">CONTACT US</a>
+            <a href="LOGIN.html" target="_blank">LOGIN</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." aria-label="Search">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="product-list">
+        
+        <!-- Ferrari 296 GTB -->
+        <div class="product">
+            <img src="Ferrari 296 GTB.jpg" alt="Ferrari 296 GTB">
+            <h2>Ferrari 296 GTB</h2>
+            <p>A plug-in hybrid sports car that represents Ferrari's future, blending exceptional performance with cutting-edge technology.</p>
+            <a href="Ferrari_296_GTB.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari 488 GTB -->
+        <div class="product">
+            <img src="Ferrari 488 GTB.jpg" alt="Ferrari 488 GTB">
+            <h2>Ferrari 488 GTB</h2>
+            <p>With its stunning looks and razor-sharp handling, the 488 GTB is a true representation of Ferrari's legacy in performance cars.</p>
+            <a href="Ferrari_488_GTB.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari F8 Tributo -->
+        <div class="product">
+            <img src="Ferrari F8 Tributo.jpg" alt="Ferrari F8 Tributo">
+            <h2>Ferrari F8 Tributo</h2>
+            <p>The Ferrari F8 Tributo is one of the most powerful mid-engine sports cars in the world, with a design that draws attention everywhere.</p>
+            <a href="Ferrari_F8_Tributo.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari Portofino M -->
+        <div class="product">
+            <img src="Ferrari Portofino M.jpg" alt="Ferrari Portofino M">
+            <h2>Ferrari Portofino M</h2>
+            <p>Elegant and sporty, the Portofino M offers a perfect combination of comfort, technology, and Ferrari's signature performance.</p>
+            <a href="Ferrari_Portofino_M.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari Roma -->
+        <div class="product">
+            <img src="Ferrari Roma.jpg" alt="Ferrari Roma">
+            <h2>Ferrari Roma</h2>
+            <p>The Ferrari Roma is an elegant GT car that combines classic Ferrari performance with modern technology and style.</p>
+            <a href="Ferrari_Roma.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari SF90 Stradale -->
+        <div class="product">
+            <img src="Ferrari SF90 Stradale.jpg" alt="Ferrari SF90 Stradale">
+            <h2>Ferrari SF90 Stradale</h2>
+            <p>The SF90 Stradale is Ferrari's most powerful and technologically advanced car, featuring hybrid power and track-ready performance.</p>
+            <a href="Ferrari_SF90_Stradale.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari GTC4Lusso -->
+        <div class="product">
+            <img src="Ferrari GTC4Lusso.jpg" alt="Ferrari GTC4Lusso">
+            <h2>Ferrari GTC4Lusso</h2>
+            <p>With its 4-seat configuration, the GTC4Lusso offers Ferrari's signature performance in a versatile and luxurious package.</p>
+            <a href="Ferrari_GTC4Lusso.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari 812 Superfast -->
+        <div class="product">
+            <img src="Ferrari 812 Superfast.jpg" alt="Ferrari 812 Superfast">
+            <h2>Ferrari 812 Superfast</h2>
+            <p>The 812 Superfast is an extraordinary V12-powered grand tourer that delivers unrivaled performance and thrill.</p>
+            <a href="Ferrari_812_Superfast.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari Monza SP2 -->
+        <div class="product">
+            <img src="Ferrari Monza SP2.jpg" alt="Ferrari Monza SP2">
+            <h2>Ferrari Monza SP2</h2>
+            <p>The Monza SP2 is a limited-edition barchetta that embodies the spirit of Ferrari's iconic racing history.</p>
+            <a href="Ferrari_Monza_SP2.html" target="_blank"><button>Learn More</button></a>
+        </div>
+
+        <!-- Ferrari LaFerrari -->
+        <div class="product">
+            <img src="Ferrari LaFerrari.jpg" alt="Ferrari LaFerrari">
+            <h2>Ferrari LaFerrari</h2>
+            <p>Ferrari’s hypercar, LaFerrari combines extraordinary performance with cutting-edge hybrid technology and exclusive design.</p>
+            <a href="Ferrari_LaFerrari.html" target="_blank"><button>Learn More</button></a>
+        </div>
+       
+    </div>
+
+    <footer>
+        <div>
+            <a href="ABOUTUS.html" target="_blank">About Us</a>
+            <a href="CONTACTUS.html" target="_blank">Contact Us</a>
+            <a href="LOGIN.html" target="_blank">Login</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+        </div>
+        <p>&copy; 2024 MIDNIGHT-RIDES. All rights reserved.</p>
+    </footer>
+</body>
+</html>
